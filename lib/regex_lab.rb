@@ -17,7 +17,7 @@ end
 def valid_phone_number?(phone)
 sum = 0
 numbers = phone.scan(/(\d)+(\d)+(\d)/)
-numbers.flatten!
+binding.pry
 
 numbers.each {|a| sum+=a}
 
