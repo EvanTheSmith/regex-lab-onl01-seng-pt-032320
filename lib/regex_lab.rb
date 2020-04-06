@@ -15,8 +15,5 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-sum = 0
-numbers = phone.scan(/(\d)+(\d)+(\d)/)
-
-puts numbers
+phone.scan(/.*\d{3}.*?\d{3}.*?\d{4}/)
 end
