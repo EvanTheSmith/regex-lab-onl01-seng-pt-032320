@@ -18,7 +18,7 @@ def valid_phone_number?(phone)
 sum = 0
 numbers = phone.scan(/(\d)+(\d)+(\d)/)
 
-
+numbers.each do |
 
 
 sum == 10 ? true : false
