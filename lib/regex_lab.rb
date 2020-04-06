@@ -17,8 +17,9 @@ end
 def valid_phone_number?(phone)
 sum = 0
 numbers = phone.scan(/(\d)+(\d)+(\d)/)
+numbers.flatten!
 
-numbers.each {|a|
+numbers.each {|a| sum+=a}
 
 
 sum == 10 ? true : false
