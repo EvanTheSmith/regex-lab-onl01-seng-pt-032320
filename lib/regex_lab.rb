@@ -15,7 +15,11 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
+sum = 0
 numbers = phone.scan(/(\d)+(\d)+(\d)/)
-numbers.inject(0){|sum,x| sum + x }
+
+
+
+
 sum == 10 ? true : false
 end
