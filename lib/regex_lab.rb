@@ -16,5 +16,6 @@ end
 
 def valid_phone_number?(phone)
 add = phone.scan(/(\d)+(\d)+(\d)/)
-
+sum = add.inject(0){|sum,x| sum + x }
+sum == 10 ? true : false
 end
