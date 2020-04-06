@@ -17,8 +17,6 @@ end
 def valid_phone_number?(phone)
 sum = 0
 numbers = phone.scan(/(\d)+(\d)+(\d)/)
-binding.pry
 
-
-sum == 10 ? true : false
+puts numbers
 end
