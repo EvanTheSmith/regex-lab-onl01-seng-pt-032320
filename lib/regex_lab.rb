@@ -19,8 +19,6 @@ sum = 0
 numbers = phone.scan(/(\d)+(\d)+(\d)/)
 binding.pry
 
-numbers.each {|a| sum+=a}
-
 
 sum == 10 ? true : false
 end
